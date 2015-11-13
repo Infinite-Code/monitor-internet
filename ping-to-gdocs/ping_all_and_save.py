@@ -10,7 +10,7 @@ def run():
     ]
     timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
     results = ping.ping_servers(hostnames)
-    with open('{}.json'.format(timestamp), 'w') as fd:
+    with open('data/{}.json'.format(timestamp), 'w') as fd:
         json.dump({
             'timestamp': timestamp,
             'results': results,
