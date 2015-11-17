@@ -1,0 +1,1 @@
+{"results": [{"hostname": "8.8.8.8", "avg": 41.918, "packet_loss": 0.0}, {"hostname": "cn.pool.ntp.org", "avg": 722.027, "packet_loss": 0.0}], "timestamp": "2015-11-13T18:25:35"}
