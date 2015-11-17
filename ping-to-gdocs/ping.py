@@ -9,7 +9,7 @@ def ping_servers(hostnames):
 def ping_server(hostname):
     try:
         print('ping {}'.format(hostname))
-        result = subprocess.check_output(['ping', '-c10', hostname])
+        result = subprocess.check_output(['/usr/bin/env', 'ping', '-c10', hostname])
         lines = result.decode('utf8').split('\n')
         packet_loss = None
         avg = None
