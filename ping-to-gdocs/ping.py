@@ -20,7 +20,7 @@ def ping_server(hostname, debug=False):
             if 'packet loss' in line:
                 packet_loss = float(
                     line.split(',')[2].split()[0].replace('%', ''))
-            if 'round-trip' in line:
+            if 'round-trip' in line or 'rtt' in line:
                 avg = float(line.split('=')[1].split('/')[1])
         return {
             'hostname': hostname,
