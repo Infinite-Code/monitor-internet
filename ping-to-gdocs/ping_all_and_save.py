@@ -9,6 +9,7 @@ def run():
     hostnames = [
         '8.8.8.8',  # google dns 1
         'cn.pool.ntp.org',  # china ntp server
+        'clearsea.appannie.com',  # appannie video conferencing server
     ]
     timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
     results = ping.ping_servers(hostnames)
